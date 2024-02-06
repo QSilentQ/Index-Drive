@@ -10,7 +10,7 @@ export default function SubTitle() {
             <span className='ml-[15px] lg:ml-[80px] text-[20px] lg:text-[32px] font-medium'>ТЕПЕРЬ В ТВОЕМ ГОРОДЕ</span>
         </div>
         <div className="lg:flex lg:justify-between px-[10px] lg:px-[160px] items-center mt-[20px] text-[16px] lg:text-[32px]">
-            <ul className='list-disc leading-loose ml-[35px] lg:ml-[110px]'>
+            <ul className='list-disc space-y-[20px] ml-[35px] lg:ml-[110px]'>
                 <li>Выбор лююбого удобного автомобиля</li>
                 <li>Возможность выбора даты, времени и места</li>
                 <li>Выбор тарифа</li>
@@ -26,7 +26,6 @@ export default function SubTitle() {
                 <div className="lg:text-[15px] flex gap-[10px]">
                     <input type="checkbox" />
                     <span>Я принимаю <span className='text-[#EBB804]'>Политику конфиденциальности</span></span>
-                    
                 </div>
             </div>
         </div>

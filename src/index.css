@@ -4,73 +4,116 @@
 
 /* Position and sizing of burger button */
 .bm-burger-button {
-    display: none;
-    position: fixed;
-    width: 36px;
-    height: 30px;
-    left: 36px;
-    top: 36px;
-  }
+  display: none;
+  position: fixed;
+  width: 36px;
+  height: 30px;
+  left: 36px;
+  top: 36px;
+}
   
   /* Color/shape of burger icon bars */
-  .bm-burger-bars {
-    background: #ffffff;
-  }
+.bm-burger-bars {
+  background: #ffffff;
+}
   
   /* Color/shape of burger icon bars on hover*/
-  .bm-burger-bars-hover {
-    background: #a90000;
-  }
+.bm-burger-bars-hover {
+  background: #a90000;
+}
   
   /* Position and sizing of clickable cross button */
-  .bm-cross-button {
-    height: 24px;
-    width: 24px;
-  }
+.bm-cross-button {
+  height: 24px;
+  width: 24px;
+}
   
   /* Color/shape of close button cross */
-  .bm-cross {
-    background: #000000;
-  }
+.bm-cross {
+  background: #000000;
+}
   
   /*
   Sidebar wrapper styles
   Note: Beware of modifying this element as it can break the animations - you should not need to touch it in most cases
   */
-  .bm-menu-wrap {
-    position: fixed;
-    height: 100%;
-    top: 0;
-    left: 0;
-  }
+.bm-menu-wrap {
+  position: fixed;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
   
   /* General sidebar styles */
-  .bm-menu {
-    background: #ffffff;
-    padding: 2.5em 1.5em 0;
-    font-size: 1.15em;
-  }
+.bm-menu {
+  background: #ffffff;
+  padding: 2.5em 1.5em 0;
+  font-size: 1.15em;
+}
   
   /* Morph shape necessary with bubble or elastic */
-  .bm-morph-shape {
-    fill: #373a47;
-  }
+.bm-morph-shape {
+  fill: #373a47;
+}
   
   /* Wrapper for item list */
-  .bm-item-list {
-    color: #000000;
-    padding: 0.8em;
-  }
+.bm-item-list {
+  color: #000000;
+  padding: 0.8em;
+}
   
   /* Individual item */
-  .bm-item {
-    display: inline-block;
-  }
+.bm-item {
+  display: inline-block;
+}
   
   /* Styling of overlay */
-  .bm-overlay {
-    background: rgba(0, 0, 0, 0.3);
-    position: fixed;
-    left: 0;
-    top: 0;
-  }
+.bm-overlay {
+  background: rgba(0, 0, 0, 0.3);
+  position: fixed;
+  left: 0;
+  top: 0;
+}
+
+
+
+.mydict div {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-top: 0.5rem;
+  justify-content: center;
+}
+
+.mydict input[type="radio"] {
+  clip: rect(0 0 0 0);
+  clip-path: inset(100%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+.mydict input[type="radio"]:checked + span {
+  background-color: #F5B048;
+  z-index: 1;
+  color: white;
+}
+
+label span {
+  width: 200px;
+  display: block;
+  cursor: pointer;
+  background-color: rgb(243, 243, 243);
+  padding: 20px 20px;
+  position: relative;
+  margin-left: .0625em;
+  letter-spacing: .05em;
+  color: #000000;
+  border-radius: 10px;
+  text-align: center;
+  transition: background-color .5s ease;
+}
+
+
