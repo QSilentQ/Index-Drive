@@ -16,7 +16,9 @@ export default function Header() {
                 <a className='menu-item' href='/'>Бронирование</a>
                 <a className='menu-item' href='/'>Для бизнеса</a>
             </Menu>
-            <img src={logo} alt="logo" className='hidden lg:block'/>
+            <a href="/">
+                <img src={logo} alt="logo" className='hidden lg:block'/>
+            </a>
 
         </div>
         <div className="">
@@ -27,7 +29,9 @@ export default function Header() {
                 <Link to='/'>Для бизнеса</Link>
             </div>
         </div>
-        <div className="w-[45px] h-[45px] bg-[#D9D9D9] rounded-full"></div>
+        <a href="/auth">
+            <div className="w-[45px] h-[45px] bg-[#D9D9D9] rounded-full"></div>
+        </a>
     </div>
   )
 }
