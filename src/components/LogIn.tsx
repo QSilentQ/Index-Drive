@@ -26,7 +26,7 @@ export default function LogIn() {
                 <input type="text" className='px-[20px] py-[7px]' placeholder='Номер или E-mail'/>
             </div>
             <div className="flex flex-col mt-[25px] gap-[20px]">
-                <button className='border-2 border-black-500 px-[80px] py-[13px] rounded-[15px] bg-[#FDE14B]'>Войти</button>
+                <button className=' px-[80px] py-[13px] rounded-[15px] bg-[#FDE14B]'>Войти</button>
                 <Link to='/reg'>
                     <button className='border-2 border-black-500 px-[80px] py-[13px] rounded-[15px]'>Создать ID</button>
                 </Link>

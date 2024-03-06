@@ -42,8 +42,8 @@ export default function Footer() {
                     </div>
 				</div>
 			</div>
-			<div className='flex justify-center items-center space-x-[10px] p-[15px] mt-[40px] bg-black text-white text-[24px]'>
-				<img src={cIcon} alt='cIcon' className='w-[30px]' />
+			<div className='flex justify-center items-center space-x-[10px] p-[15px] mt-[40px] bg-black text-white lg:text-[24px]'>
+				<img src={cIcon} alt='cIcon' className='lg:w-[30px]' />
 				<span>2023</span>
 				<span>Индекс Драйв</span>
 			</div>
