@@ -2,6 +2,7 @@ import React from 'react'
 import bg_logIn from '../images/logIn_bg.svg'
 import circle from '../images/circle.svg'
 import logo from '../images/logo.svg'
+import { Link } from 'react-router-dom'
 
 export default function RegIn() {
   return (
@@ -22,7 +23,9 @@ export default function RegIn() {
               <input type="text" placeholder='Повторите пароль' className='border-solid border-b-2 border-[#D6D6D6]'/>
             </div>
             <div className="my-[20px] flex justify-center">
-              <button className='px-[30px] py-[10px] lg:text-[24px] text-[18px] bg-[#FDE14B] rounded-[10px]'>Зарегистрироваться</button>
+              <Link to="/auth">
+                <button className='px-[30px] py-[10px] lg:text-[24px] text-[18px] bg-[#FDE14B] rounded-[10px]'>Зарегистрироваться</button>
+              </Link>
             </div>
             <div className="">
                 <div className="space-x-[5px] lg:w-[300px] w-[226px]">

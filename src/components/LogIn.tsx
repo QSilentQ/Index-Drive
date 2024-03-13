@@ -25,8 +25,10 @@ export default function LogIn() {
             <div className="border-2 border-black-500 text-[20px] flex gap-[5px] p-[5px] mt-[15px] rounded-[10px]">
                 <input type="text" className='px-[20px] py-[7px]' placeholder='Номер или E-mail'/>
             </div>
-            <div className="flex flex-col mt-[25px] gap-[20px]">
-                <button className=' px-[80px] py-[13px] rounded-[15px] bg-[#FDE14B]'>Войти</button>
+              <div className="flex flex-col mt-[25px] gap-[20px]">
+                <Link to='/profile'>
+                    <button className='w-full px-[80px] py-[13px] rounded-[15px] bg-[#FDE14B]'>Войти</button>
+                </Link>
                 <Link to='/reg'>
                     <button className='border-2 border-black-500 px-[80px] py-[13px] rounded-[15px]'>Создать ID</button>
                 </Link>

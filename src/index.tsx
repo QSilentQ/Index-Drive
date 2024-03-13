@@ -8,6 +8,7 @@ import './index.css';
 import LandingPage from './pages/LandingPage';
 import Auth from './pages/Auth';
 import Reg from './pages/Reg';
+import ProfileInfo from './pages/ProfileInfo';
 
 const router = createBrowserRouter([
   {
@@ -22,6 +23,10 @@ const router = createBrowserRouter([
     path: "/reg",
     element: <Reg/>,
   },
+  {
+    path: "/profile",
+    element: <ProfileInfo/>
+  }
 ]);
 
 const root = ReactDOM.createRoot(
