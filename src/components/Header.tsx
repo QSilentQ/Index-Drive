@@ -8,13 +8,12 @@ export default function Header() {
     const [isSidebarOpen, setIsSidebarOpen] = useState<boolean>(false)
 
   return (
-    <div className='flex justify-between items-center min-w-[320px] px-[25px] py-[16px]'>
+    <div className='flex justify-between items-center min-w-[320px] px-[25px] py-[16px] shadow-lg'>
         <div className="">
             <img src={menu} alt="menu" className='lg:hidden' onClick={()=>{setIsSidebarOpen(true)}}/>
             <Menu isOpen={isSidebarOpen} onClose={()=>{setIsSidebarOpen(false)}}>
                 <a className='menu-item' href='/'>Главная</a>
-                <a className='menu-item' href='/'>Бронирование</a>
-                <a className='menu-item' href='/'>Для бизнеса</a>
+                <a className='menu-item' href='/booking'>Бронирование</a>
             </Menu>
             <a href="/">
                 <img src={logo} alt="logo" className='hidden lg:block'/>
@@ -25,8 +24,7 @@ export default function Header() {
             <img src={logo} alt="logo" className='lg:hidden'/>
             <div className="lg:flex hidden gap-[80px] font-medium text-[20px]">
                 <Link to='/'>Главная</Link>
-                <Link to='/'>Бронирование</Link>
-                <Link to='/'>Для бизнеса</Link>
+                <Link to='/booking'>Бронирование</Link>
             </div>
         </div>
         <a href="/auth">

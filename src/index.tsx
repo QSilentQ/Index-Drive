@@ -9,6 +9,7 @@ import LandingPage from './pages/LandingPage';
 import Auth from './pages/Auth';
 import Reg from './pages/Reg';
 import ProfileInfo from './pages/ProfileInfo';
+import BookingPage from './pages/BookingPage';
 
 const router = createBrowserRouter([
   {
@@ -26,6 +27,10 @@ const router = createBrowserRouter([
   {
     path: "/profile",
     element: <ProfileInfo/>
+  },
+  {
+    path: "/booking",
+    element: <BookingPage/>
   }
 ]);
 
